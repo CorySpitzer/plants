@@ -1,0 +1,11 @@
+<h1>Families</h1>
+
+<%= link_to 'Add a New Family', new_family_path %>
+
+<% @families.each do |family| %>
+  <ul>
+    <li>
+      <%= family.name %>
+    </li>
+  </ul>
+<% end %>
