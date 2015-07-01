@@ -7,6 +7,10 @@ class FamiliesController < ApplicationController
     @family = Family.new()
   end
 
+  def show
+    @family = Family.find(params[:id])
+  end
+
   def create
     @family = Family.new(family_params)
     if @family.save

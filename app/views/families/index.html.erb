@@ -5,7 +5,7 @@
 <% @families.each do |family| %>
   <ul>
     <li>
-      <%= family.name %>
+      <%= link_to family.name, family_path(family.id) %>
     </li>
   </ul>
 <% end %>
