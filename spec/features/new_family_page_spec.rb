@@ -8,7 +8,7 @@ describe 'the new family path' do
 
   it 'creates a new family' do
     visit new_family_path
-    fill_in 'name', :with => 'Lycopodiopsida'
+    fill_in 'Name', :with => 'Lycopodiopsida'
     click_on 'Create Family'
     expect(page).to have_content 'Lycopodiopsida'
   end
