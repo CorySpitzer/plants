@@ -2,3 +2,5 @@
 
 
 <%= link_to 'Edit Family', edit_family_path(@family) %>
+<%= link_to 'Delete Family', family_path(@family), data: {confirm: "Confirm?",
+                                                          method: "delete"} %>

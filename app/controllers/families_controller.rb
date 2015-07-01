@@ -34,6 +34,12 @@ class FamiliesController < ApplicationController
     end
   end
 
+  def destroy
+    @family = Family.find(params[:id])
+    @family.destroy
+    redirect_to families_path
+  end
+
   private
     def family_params
       params.require(:family).permit(:name)
